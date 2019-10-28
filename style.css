@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+
+}
+
+@font-face{
+    font-family: Avenir;
+    src: url(Avenir.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir'; 
+}
+
+.topbar {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.logo a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.logo p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu  {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.menu ul li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.user {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.user .fa {
+    width: 32%;
+    padding: 30px;
+    text-align: center;
+}
+
+.container  {
+    float: left;
+    width: 100%;
+    height: 1000px;
+    margin: 100px auto;
+}
+
+.main {
+    width: 98%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.main .pro  {
+    display: inline-block;
+    width: 24%;
+    height: auto;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.pro img{
+    width: 98%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.pro a{
+    float: left;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    margin-top: -5px;
+    
+}
+@media only screen and (max-width:600px) {
+    /* For mobile phones: */
+    .topbar, .logo, .menu, .user  {
+      width:100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width:900px) {
+    /* For mobile phones: */
+    .main, .pro, img  {
+      width:100%;
+    }
+    .container {
+        margin-top: 180px;
+    }
+    .main .pro {
+        width: 31%;
+    }
+  }
